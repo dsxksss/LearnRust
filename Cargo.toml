@@ -6,3 +6,6 @@ edition = "2021"#使用的rust版本
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]#另一个区域的开始，它会列出项目的依赖项
+
+[workspace]#工作区
+members = ["guessing_number"]
