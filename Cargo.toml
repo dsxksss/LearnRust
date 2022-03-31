@@ -1,8 +1,8 @@
-[package]
-name = "newRustFile"
-version = "0.1.0"
-edition = "2021"
+[package]#是一个区域标题，表示下方内容是用来配置包的
+name = "learn_rust"#项目名称
+version = "0.1.0"#项目版本
+edition = "2021"#使用的rust版本
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+[dependencies]#另一个区域的开始，它会列出项目的依赖项
