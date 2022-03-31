@@ -37,6 +37,10 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "efaa7b300f3b5fe8eb6bf21ce3895e1751d9665086af2d64b42f19701015ff4f"
 
 [[package]]
+name = "out_and_in"
+version = "0.1.0"
+
+[[package]]
 name = "ppv-lite86"
 version = "0.2.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -82,6 +86,10 @@ checksum = "ca3129af7b92a17112d59ad498c6f81eaf463253766b90396d39ea7a39d6613c"
 dependencies = [
  "rand_core",
 ]
+
+[[package]]
+name = "variables"
+version = "0.1.0"
 
 [[package]]
 name = "wasi"
