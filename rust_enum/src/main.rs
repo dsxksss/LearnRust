@@ -14,6 +14,12 @@ enum Book {
     //如果你想为属性命名，可以用结构体语法：
     Electronic { url: String },
 }
+//枚举方法,和struct方法差不多
+impl Book {
+    fn call(&self) {
+        println!("i am function in Book enum");
+    }
+}
 
 /*
 let book = Book::Papery{index: 1001};
@@ -25,9 +31,9 @@ let book = Book::Papery{index: 1001};
 match 语法
 枚举的目的是对某一类事物的分类，分类的目的是为了对不同的情况进行描述。
 基于这个原理，往往枚举类最终都会被分支结构处理（许多语言中的 switch ）。
- switch 语法很经典，但在 Rust 中并不支持，很多语言摒弃 switch 的原因都是
- 因为switch 容易存在因忘记添加 break 而产生的串接运行问题，
- Java 和 C# 这类语言通过安全检查杜绝这种情况出现。
+switch 语法很经典，但在 Rust 中并不支持，很多语言摒弃 switch 的原因都是
+因为switch 容易存在因忘记添加 break 而产生的串接运行问题，
+Java 和 C# 这类语言通过安全检查杜绝这种情况出现。
 */
 
 fn main() {
@@ -35,6 +41,8 @@ fn main() {
     let book_path = Book::Electronic {
         url: String::from("url://..."),
     };
+    //使用枚举方法
+    book.call();
 
     //Rust 通过 match 语句来实现分支结构。先认识一下如何用 match 处理枚举类：
     match book {
