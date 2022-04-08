@@ -112,6 +112,10 @@ name = "rust_enum"
 version = "0.1.0"
 
 [[package]]
+name = "rust_match"
+version = "0.1.0"
+
+[[package]]
 name = "rust_struct"
 version = "0.1.0"
 
