@@ -8,4 +8,4 @@ edition = "2021"#使用的rust版本
 [dependencies]#另一个区域的开始，它会列出项目的依赖项
 
 [workspace]#工作区
-members = ["guessing_number","variables","out_and_in","function","if_else","Rust_loop","reference","slice","rust_struct","rust_struct_demo","rust_enum","enum_option","rust_match","enum_demo_log"]
+members = ["guessing_number","variables","out_and_in","function","if_else","Rust_loop","reference","slice","rust_struct","rust_struct_demo","rust_enum","enum_option","rust_match","enum_demo_log","rust_use"]
