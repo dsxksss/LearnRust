@@ -132,6 +132,10 @@ name = "rust_use"
 version = "0.1.0"
 
 [[package]]
+name = "rust_vector"
+version = "0.1.0"
+
+[[package]]
 name = "slice"
 version = "0.1.0"
 
