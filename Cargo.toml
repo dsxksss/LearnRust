@@ -15,4 +15,4 @@ members = ["guessing_number",
 "rust_struct_demo","rust_enum",
 "enum_option","rust_match",
 "enum_demo_log","rust_use","rust_vector",
-"rust_vector_demo"]
+"rust_vector_demo","rust_string"]
