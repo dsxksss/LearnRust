@@ -124,6 +124,10 @@ name = "rust_match"
 version = "0.1.0"
 
 [[package]]
+name = "rust_panic"
+version = "0.1.0"
+
+[[package]]
 name = "rust_string"
 version = "0.1.0"
 
