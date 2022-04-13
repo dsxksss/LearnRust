@@ -116,6 +116,10 @@ name = "rust_enum"
 version = "0.1.0"
 
 [[package]]
+name = "rust_generics"
+version = "0.1.0"
+
+[[package]]
 name = "rust_hash_map"
 version = "0.1.0"
 
