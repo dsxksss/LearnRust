@@ -112,6 +112,23 @@ impl<T, F> Point2<T, F> {
 --在编译时将泛型替换为具体类型的过程
 */
 
+//--------------trait篇的后续内容补充--------------
+//largest功能就是返回一组数据中的最大值
+//因为PartialOrd这个方法存在于预导入模块中所以不用使用use关键字
+//因为String类型需要Clone的Trait实现
+fn largest<T: PartialOrd + Clone>(list: &[T]) -> &T {
+    let mut largest = &list[0];
+
+    for item in list.iter() {
+        //>号对应的标准库中的std::cmp::partialOrd这个方法,
+        //所以解决方法也是让T类型也实现同样的Trait
+        if item > &largest {
+            largest = item;
+        }
+    }
+    largest
+}
+
 fn main() {
     let integer = Point { x: 5, y: 10 };
     let float = Point { x: 1.5, y: 4.7 };
@@ -133,4 +150,20 @@ fn main() {
     let p2 = Point2 { x: "Hello", y: 'c' };
     let p3 = p1.mixup(p2);
     println!("p3.x = {} , p3.y = {}", p3.x, p3.y);
+
+    //largest函数使用:
+    //number数据
+    let number_list = vec![34, 50, 25, 100, 65];
+    let result = largest(&number_list);
+    println!("The largest number is {}", result);
+
+    //&str数据
+    let str_list = vec!["aaa", "bbb", "ccc", "ddd", "hello world"];
+    let result = largest(&str_list);
+    println!("The largest number is {}", result);
+
+    //String数据
+    let string_list = vec![String::from("hello"), String::from("world")];
+    let result = largest(&string_list);
+    println!("The largest number is {}", result);
 }
