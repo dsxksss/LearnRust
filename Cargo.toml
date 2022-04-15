@@ -18,4 +18,4 @@ members = ["guessing_number",
 "rust_vector_demo","rust_string",
 "rust_hash_map","rust_panic",
 "rust_result","rust_generics",
-"rust_trait"]
+"rust_trait","rust_lifecycle"]
