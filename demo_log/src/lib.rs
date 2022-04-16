@@ -9,21 +9,21 @@ impl SLog {
     pub fn error(&self, msg: &str) -> () {
         if self.log_level.get_level() >= SLog::get_level(ELogLevel::Error) {
             println!("[Error]:\u{001b}[31m {} \u{001b}[0m", msg);
-            write_file(&self.pathname, format!("[Error]:{}", String::from(msg)))
+            write_file(&self.pathname, format!("[Error]: {}", String::from(msg)))
                 .expect("Error write error!");
         }
     }
     pub fn warning(&self, msg: &str) -> () {
         if self.log_level.get_level() >= SLog::get_level(ELogLevel::Warning) {
             println!("[Warning]:\u{001b}[33m {} \u{001b}[0m", msg);
-            write_file(&self.pathname, format!("[Warning]:{}", String::from(msg)))
+            write_file(&self.pathname, format!("[Warning]: {}", String::from(msg)))
                 .expect("Warning write error!");
         }
     }
     pub fn info(&self, msg: &str) -> () {
         if self.log_level.get_level() >= SLog::get_level(ELogLevel::Info) {
             println!("[Info]:\u{001b}[34m {} \u{001b}[0m", msg);
-            write_file(&self.pathname, format!("[Info]:{}", String::from(msg)))
+            write_file(&self.pathname, format!("[Info]: {}", String::from(msg)))
                 .expect("Info write error!");
         }
     }
